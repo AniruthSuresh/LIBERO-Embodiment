@@ -39,8 +39,10 @@ env_args = {
     "bddl_file_name": task_bddl_file,
     "camera_heights": 256,
     "camera_widths": 256,
-     "robots": ['Kinova'] 
+     "robots": ['Sawyer'] # could be 'Panda' or 'Sawyer' as well
 }
+
+
 env = OffScreenRenderEnv(**env_args)
 print("[info] Resetting environment to a default initial state.")
 initial_obs = env.reset()
